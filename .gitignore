@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# ignore these directories
+data/
+chart/
+2009 RASS/
+2009 RECS/
+

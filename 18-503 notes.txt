@@ -1,0 +1,17 @@
+2019-02-06
+    distribution of annual WH therms for slab foundation houses
+    got the basic plot and data.table for Yanda, Gary & Carl
+    
+2019-02-08
+    from today's call 
+    assume under-slab pipe is everything 300-500 therms
+    and under-slab pipe w/recirc 500+, excluding the maximum extreme case.
+    
+2019-02-11
+    set up local CA_WH_analysis. links to 2009 RECS & 2009 RASS. start
+    git project for this
+    
+    
+
+
+    
