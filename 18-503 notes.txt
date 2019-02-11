@@ -11,6 +11,23 @@
     set up local CA_WH_analysis. links to 2009 RECS & 2009 RASS. start
     git project for this
     
+    followed directions at https://happygitwithr.com/existing-github-last.html
+    then in shell
+        git init
+        git remote add origin https://github.com/jim-lutz/CA_WH_analysis_18-503.git
+        git add --all
+        git commit -m "initial commit of pre-existing files"
+        git push -u origin master
+
+    had to copy over load_RASS.R and load_RECS.R to make .Rdata files. 
+    fixed paths for this directory.
+    
+    
+    
+
+        
+
+           
     
 
 
