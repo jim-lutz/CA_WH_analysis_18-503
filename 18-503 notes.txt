@@ -22,7 +22,9 @@
     had to copy over load_RASS.R and load_RECS.R to make .Rdata files. 
     fixed paths for this directory.
     
-    
+    calc 
+    WHtherm.300.500, list of info re the 300-500 WHtherm records and
+    DT_300.550.box, data.table of bounding box
     
 
         

@@ -21,8 +21,8 @@ d <- format(Sys.time(), "%F")
 # load data
 load(file = paste0('data/', "DT_RECS_CA.Rdata"))
 
-# see ../2009 RECS/recs2009_public_codebook.xlsx, ../2009 RECS/public_layout.csv and 
-# ../2009 RECS/using-microdata-022613.pdf for information about data
+# see data/2009 RECS/recs2009_public_codebook.xlsx, data/2009 RECS/public_layout.csv and 
+# data/2009 RECS/using-microdata-022613.pdf for information about data
 
 # factors for TYPEHUQ	Type of housing unit	
 DT_RECS_CA[ ,F_TYPEHUQ:= factor(x=TYPEHUQ,
@@ -104,6 +104,8 @@ DT_SLAB_WHNG[ , cumWEIGHT := cumsum(NWEIGHT.y)]
 
 # look at the extreme tail
 tail(DT_SLAB_WHNG$WHtherms)
+# [1]  638.5800  678.5500  686.9734  723.0842  777.9800 1560.2337
+
 DT_SLAB_WHNG[WHtherms %in% tail(DT_SLAB_WHNG$WHtherms),
              list(DOEID, NWEIGHT.y, WHtherms, cumWEIGHT)]
 #    DOEID NWEIGHT.y  WHtherms cumWEIGHT
@@ -163,13 +165,13 @@ WHtherm.300.500
 # [1] 403940
 
 # under-slab box, counterclockwise from lower left corner
-DT_300.550 <-
+DT_300.550.box <-
   with(WHtherm.300.500,
       data.table(x=c(min.cumWEIGHT,max.cumWEIGHT,max.cumWEIGHT,min.cumWEIGHT,min.cumWEIGHT),
                  y=c(300,300,500,500,300))
     )
 
-DT_300.550
+DT_300.550.box
 #          x   y
 # 1: 3642375 300
 # 2: 4046315 300
